@@ -42,6 +42,18 @@ flowchart LR
     G --> H["WoS-based deduplication"]
     H --> I["Evidence base for full-text evaluation"]
 ```
+## Repository structure
+
+```text
+digital-viticulture-evidence-mapping/
+├── README.md
+├── final_code.ipynb
+├── input_schema.csv
+├── cross_domain_overlap.png
+├── requirements.txt
+└── LICENSE
+```
+
 ## Cross-domain overlap
 
 The Top-40 selection generated 160 category assignments across the four
@@ -64,3 +76,103 @@ The diagonal cells represent the 40 publications retained within each
 domain. Off-diagonal cells show shared publications, revealing the
 strongest intersections between AI and sensing technologies and between
 precision viticulture and decision-support infrastructures.
+
+## Input data
+
+The notebook expects a CSV file containing Web of Science bibliographic
+records with, at minimum, the following columns:
+
+- `Article Title`
+- `Abstract`
+- `UT (Unique ID)`
+
+The following alternative identifier fields are also recognized:
+
+- `UT`
+- `WOS`
+- `Accession Number`
+
+The original `wos_records.csv` file is not included because it contains
+licensed bibliographic content exported from Web of Science. Users must
+obtain the source records through authorized institutional access.
+
+The repository includes `input_schema.csv`, a synthetic example showing
+the minimum structure required by the notebook. This example is intended
+only to document the input format and does not reproduce the numerical
+results reported in the associated systematic review.
+
+## Main parameters
+
+The final analysis uses:
+
+```python
+top_n = 40
+min_score = 5
+```
+
+## Running the workflow
+
+The notebook was developed and tested in Google Colab.
+
+Download or clone this repository.
+Open final_code.ipynb in Google Colab.
+Mount Google Drive when prompted.
+Update the input and output paths if necessary.
+Run the notebook cells sequentially.
+
+## Outputs
+
+The workflow generates:
+screening decisions for all bibliographic records;
+weighted scores for each technological domain;
+Top-40 selections for the four domains;
+a pairwise cross-domain overlap matrix;
+a WoS-ID-based deduplicated evidence set;
+category-level summary tables;
+Excel and text exports;
+the cross-domain overlap heatmap.
+Methodological scope
+
+The notebook reproduces the automated stages of the evidence-mapping
+workflow, including title–abstract screening, weighted thematic
+classification, Top-40 prioritization, cross-domain overlap analysis and
+WoS-based deduplication.
+
+Full-text evaluation of quantitative performance, field validation and
+technological maturity was conducted as a subsequent evidence-synthesis
+stage and is not derived solely from the automated classification.
+
+## Software requirements
+
+The workflow requires Python 3 and the following packages:
+
+pandas
+numpy
+openpyxl
+matplotlib
+seaborn
+
+Required packages and minimum versions are listed in
+requirements.txt.
+
+## Data and code availability
+
+The Python code, weighted thematic vocabularies and derived
+non-proprietary outputs are publicly available in this repository.
+Licensed Web of Science abstracts and complete bibliographic exports are
+not redistributed.
+
+## Citation
+
+If you use or adapt this workflow, please cite the associated systematic
+review and the archived Zenodo release.
+
+A permanent DOI will be added after the first GitHub release is archived
+in Zenodo.
+
+## License
+
+The source code is distributed under the MIT License. See LICENSE for
+details.
+
+
