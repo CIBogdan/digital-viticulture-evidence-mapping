@@ -42,3 +42,25 @@ flowchart LR
     G --> H["WoS-based deduplication"]
     H --> I["Evidence base for full-text evaluation"]
 ```
+## Cross-domain overlap
+
+The Top-40 selection generated 160 category assignments across the four
+technological domains. Deduplication based on unique Web of Science
+identifiers produced 152 unique publications, with eight duplicated
+category assignments corresponding to a 5.0% cross-domain overlap.
+
+<p align="center">
+  <img src="cross_domain_overlap.png"
+       width="750"
+       alt="Cross-domain overlap heatmap">
+</p>
+
+<p align="center">
+  <em>Cross-domain overlap among the four technological domains included
+  in the weighted evidence-mapping framework.</em>
+</p>
+
+The diagonal cells represent the 40 publications retained within each
+domain. Off-diagonal cells show shared publications, revealing the
+strongest intersections between AI and sensing technologies and between
+precision viticulture and decision-support infrastructures.
