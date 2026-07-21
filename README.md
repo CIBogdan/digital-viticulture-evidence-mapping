@@ -1,5 +1,8 @@
 # Digital Viticulture Evidence Mapping
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21468789.svg)](https://doi.org/10.5281/zenodo.21468789)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CIBogdan/digital-viticulture-evidence-mapping/blob/main/final_code.ipynb)
+
 A reproducible Python workflow for PRISMA-guided screening, weighted
 thematic classification and cross-domain evidence mapping in digital
 and precision viticulture.
@@ -157,19 +160,22 @@ requirements.txt.
 
 ## Data and code availability
 
-The Python code, weighted thematic vocabularies and derived
-non-proprietary outputs are publicly available in this repository.
-Licensed Web of Science abstracts and complete bibliographic exports are
-not redistributed.
+The Python code, weighted thematic vocabularies, synthetic input schema and
+derived non-proprietary outputs used for automated screening, thematic
+classification and cross-domain overlap analysis are publicly available
+through Zenodo at:
+
+https://doi.org/10.5281/zenodo.21468789
+
+The repository provides the complete computational workflow and input
+specification. Exact reproduction of the reported record-level results
+requires access to the licensed Web of Science source dataset. Web of Science
+abstracts and complete bibliographic exports are therefore not redistributed.
 
 ## Citation
 
-If you use or adapt this workflow, please cite the associated systematic
-review and the archived Zenodo release.
-
-A permanent DOI will be added after the first GitHub release is archived
-in Zenodo.
-
+Cioroiu, B. (2026). *Digital Viticulture Evidence Mapping* (Version 1.0.0).
+Zenodo. https://doi.org/10.5281/zenodo.21468789
 ## License
 
 The source code is distributed under the MIT License. See LICENSE for
