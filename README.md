@@ -174,8 +174,9 @@ abstracts and complete bibliographic exports are therefore not redistributed.
 
 ## Citation
 
-Cioroiu, B. (2026). *Digital Viticulture Evidence Mapping* (Version 1.0.0).
+*Digital Viticulture Evidence Mapping* (Version 1.0.0).
 Zenodo. https://doi.org/10.5281/zenodo.21468789
+
 ## License
 
 The source code is distributed under the MIT License. See LICENSE for
