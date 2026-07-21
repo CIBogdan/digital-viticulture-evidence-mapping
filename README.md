@@ -1,11 +1,11 @@
 # Digital Viticulture Evidence Mapping
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21468789.svg)](https://doi.org/10.5281/zenodo.21468789)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21468789-blue.svg)](https://doi.org/10.5281/zenodo.21468789)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CIBogdan/digital-viticulture-evidence-mapping/blob/main/final_code.ipynb)
 
-A reproducible Python workflow for PRISMA-guided screening, weighted
-thematic classification and cross-domain evidence mapping in digital
-and precision viticulture.
+A reproducible Python workflow for PRISMA-guided screening, weighted thematic
+classification and cross-domain evidence mapping in digital and precision
+viticulture.
 
 The workflow was developed for the systematic review:
 
